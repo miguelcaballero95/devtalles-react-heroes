@@ -14,7 +14,7 @@ export const CustomMenu = () => {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuLink
+          <NavigationMenuLink asChild
             className={cn(isActive('/') && "bg-slate-200 rounded-md p-2")}
           >
             <Link to='/'>Home</Link>
@@ -22,7 +22,7 @@ export const CustomMenu = () => {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuLink
+          <NavigationMenuLink asChild
             className={cn(isActive('/search') && "bg-slate-200 rounded-md p-2")}>
             <Link to='/search'>Search</Link>
           </NavigationMenuLink>
